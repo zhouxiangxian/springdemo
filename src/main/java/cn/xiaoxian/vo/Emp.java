@@ -1,4 +1,4 @@
-package cn.mldn.vo;
+package cn.xiaoxian.vo;
 
 public class Emp {
 	private Integer empno;
