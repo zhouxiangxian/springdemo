@@ -6,7 +6,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import cn.mldn.service.IMessageService;
-import cn.mldn.vo.Emp;
+import cn.xiaoxian.vo.Dept;
+import cn.xiaoxian.vo.Emp;
 import junit.framework.TestCase;
 
 public class TestMessage {
@@ -26,5 +27,12 @@ public class TestMessage {
 	public void testDeptConstructor() {
 		Emp emp = ctx.getBean("emp", Emp.class);
 		Logger.getLogger(TestMessage.class).info(emp);
+	}
+	
+	
+	@Test
+	public void testDeptXiaoXianConstructor() {
+		Dept dept = ctx.getBean("dept", Dept.class);
+		Logger.getLogger(TestMessage.class).info(dept);
 	}
 }
