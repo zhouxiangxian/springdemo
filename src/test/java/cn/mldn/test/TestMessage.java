@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import cn.mldn.service.IMessageService;
+import cn.xiaoxian.service.IDeptService;
 import cn.xiaoxian.vo.Dept;
 import cn.xiaoxian.vo.Emp;
 import junit.framework.TestCase;
@@ -34,5 +35,17 @@ public class TestMessage {
 	public void testDeptXiaoXianConstructor() {
 		Dept dept = ctx.getBean("dept", Dept.class);
 		Logger.getLogger(TestMessage.class).info(dept);
+	}
+	
+	
+	@Test
+	public void testAnnotation() {
+		Dept vo=new Dept();
+		vo.setDeptno(10);
+		vo.setEmps(null);
+		vo.setDname("开发一部");
+		vo.setLoc("深圳");
+		IDeptService deptService = ctx.getBean("deptServiceImpl", IDeptService.class);
+		Logger.getLogger(TestMessage.class).info(deptService.add(vo));
 	}
 }
