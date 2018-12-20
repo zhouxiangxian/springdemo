@@ -81,3 +81,11 @@
 2018-12-12 23:30:56,429 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
 2018-12-12 23:30:58,012 INFO [cn.xiaoxian.dao.impl.DeptDAOImpl] - Dept [deptno=10, dname=开发一部, loc=深圳, emps=null]
 2018-12-12 23:30:58,012 INFO [cn.mldn.test.TestMessage] - true
+2018-12-20 23:12:58,010 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Dec 20 23:12:58 CST 2018]; root of context hierarchy
+2018-12-20 23:12:59,489 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-20 23:13:22,008 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Dec 20 23:13:21 CST 2018]; root of context hierarchy
+2018-12-20 23:13:22,286 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-20 23:14:41,926 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Dec 20 23:14:41 CST 2018]; root of context hierarchy
+2018-12-20 23:14:42,194 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-20 23:23:48,867 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ee7d9f1: startup date [Thu Dec 20 23:23:48 CST 2018]; root of context hierarchy
+2018-12-20 23:23:49,213 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
