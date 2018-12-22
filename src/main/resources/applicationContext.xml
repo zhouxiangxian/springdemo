@@ -39,8 +39,8 @@
 	<bean id="resourceUtils" class="cn.xiaoxian.util.ResourceUtils">
 	    <property name="src">
 	       <array>
-	          <value>classpath:applicationContext.xml</value>
-	           <value>http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd</value>
+	          <value>classpath:abc/**/xiaoxian*</value>
+	          <value>http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd</value>
 	       </array>
 	    </property>
 	</bean>

@@ -15,6 +15,7 @@ public class ResourceUtils {
 	public void print() throws IOException {
 		for (int x = 0; x < src.length; x++) {
 			if (src[x].exists()) {
+				System.out.println(src[x].getFilename());
 				Scanner scanner = new Scanner(src[x].getInputStream());
 				scanner.useDelimiter(" ");
 				while (scanner.hasNext()) {
