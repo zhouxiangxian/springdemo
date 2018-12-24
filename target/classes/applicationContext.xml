@@ -12,6 +12,41 @@
 		http://www.springframework.org/schema/context/spring-context-4.1.xsd">
 	<context:annotation-config />
 	<context:component-scan base-package="cn.xiaoxian"/>
+	<!-- 配置定时调度 -->
+	<bean id="taskFactory1" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="cn.xiaoxian.util.MyTask1"></property>
+		<property name="jobDataMap">
+			<map>
+			  <entry key="timeout" value="0">
+			  </entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="taskFactory2" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+	  <property name="targetObject" >
+	    <bean class="cn.xiaoxian.util.MyTask2"></bean>
+	  </property>
+	  <property name="targetMethod" value="execSelf"></property>
+	</bean>
+	<bean  id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+	    <property name="jobDetail" ref="taskFactory1"></property>
+	    <property name="startDelay" value="0"></property>
+	    <property name="repeatInterval" value="2000"></property>
+	</bean>
+	
+	<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+	    <property name="jobDetail" ref="taskFactory1"></property>
+	    <property name="cronExpression" value="* * * * * ?"></property>
+	</bean>
+	
+	<bean id="triggerFactory" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	    <property name="triggers">
+	        <list>
+	          <ref bean="cronTrigger"/>
+	        </list>
+	    </property>
+	</bean>
 	<bean id="msg" class="cn.mldn.service.impl.MessageServiceImpl" />
 	<bean id="emp" class="cn.xiaoxian.vo.Emp">
 		<property name="empno" value="7369"></property>
