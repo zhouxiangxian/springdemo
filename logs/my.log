@@ -209,3 +209,317 @@
 2018-12-24 23:31:31,763 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
 2018-12-24 23:31:31,764 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
 2018-12-24 23:31:31,764 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2018-12-24 23:36:00,470 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Mon Dec 24 23:36:00 CST 2018]; root of context hierarchy
+2018-12-24 23:36:00,884 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-24 23:36:02,486 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-12-24 23:36:02,526 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-12-24 23:36:02,527 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2018-12-24 23:36:02,529 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-12-24 23:36:02,531 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-12-24 23:36:02,531 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2018-12-24 23:36:02,532 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2018-12-24 23:36:02,537 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@38c5cc4c
+2018-12-24 23:36:02,540 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'triggerFactory' defined in class path resource [applicationContext.xml]: Invocation of init method failed; nested exception is org.quartz.SchedulerException: Trigger's related Job's name cannot be null
+2018-12-24 23:37:33,547 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Mon Dec 24 23:37:33 CST 2018]; root of context hierarchy
+2018-12-24 23:37:34,115 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-24 23:37:35,491 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'deptServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.springframework.beans.factory.config.MethodInvokingJobDetailFactoryBean] for bean with name 'taskFactory2' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: org.springframework.beans.factory.config.MethodInvokingJobDetailFactoryBean
+2018-12-24 23:38:34,552 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Mon Dec 24 23:38:34 CST 2018]; root of context hierarchy
+2018-12-24 23:38:34,867 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-24 23:38:37,061 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-12-24 23:38:37,098 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-12-24 23:38:37,098 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2018-12-24 23:38:37,101 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-12-24 23:38:37,103 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-12-24 23:38:37,103 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2018-12-24 23:38:37,103 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2018-12-24 23:38:37,106 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@43ee72e6
+2018-12-24 23:38:37,257 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-12-24 23:38:37,258 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-12-24 23:38:37,258 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2018-12-25 00:00:20,630 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Tue Dec 25 00:00:20 CST 2018]; root of context hierarchy
+2018-12-25 00:00:20,933 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-25 00:01:45,844 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Tue Dec 25 00:01:45 CST 2018]; root of context hierarchy
+2018-12-25 00:01:46,282 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-25 00:01:47,795 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.scheduling.support.ScheduledMethodRunnable#0': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.support.ScheduledMethodRunnable]: Constructor threw exception; nested exception is java.lang.NoSuchMethodException: cn.xiaoxian.util.XiaoXianTask.runJob()
+2018-12-25 00:03:20,337 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Tue Dec 25 00:03:20 CST 2018]; root of context hierarchy
+2018-12-25 00:03:20,581 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-25 00:03:22,103 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.scheduling.support.ScheduledMethodRunnable#0': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.scheduling.support.ScheduledMethodRunnable]: Constructor threw exception; nested exception is java.lang.NoSuchMethodException: cn.xiaoxian.util.XiaoXianTask.runJob()
+2018-12-25 00:04:38,503 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Tue Dec 25 00:04:38 CST 2018]; root of context hierarchy
+2018-12-25 00:04:38,779 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-25 00:04:40,733 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-12-25 00:04:40,815 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-12-25 00:04:40,815 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2018-12-25 00:04:40,818 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-12-25 00:04:40,820 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-12-25 00:04:40,821 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2018-12-25 00:04:40,821 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2018-12-25 00:04:40,826 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7ee955a8
+2018-12-25 00:04:41,076 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-12-25 00:04:41,076 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-12-25 00:04:41,077 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2018-12-25 00:06:05,895 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Tue Dec 25 00:06:05 CST 2018]; root of context hierarchy
+2018-12-25 00:06:06,161 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-12-25 00:06:07,954 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2018-12-25 00:06:07,992 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-12-25 00:06:07,994 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2018-12-25 00:06:07,997 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2018-12-25 00:06:08,000 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-12-25 00:06:08,001 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2018-12-25 00:06:08,002 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2018-12-25 00:06:08,006 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6ac13091
+2018-12-25 00:06:08,254 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2018-12-25 00:06:08,255 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2018-12-25 00:06:08,255 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 13:11:10,414 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 13:11:10 CST 2019]; root of context hierarchy
+2019-01-06 13:11:10,752 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 13:11:13,890 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.AspectJPointcutAdvisor]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'name pattern' at character position 44
+execution(public * cn.xiaoxian.service..*.*(...))
+                                            ^^^
+
+2019-01-06 13:11:51,084 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 13:11:51 CST 2019]; root of context hierarchy
+2019-01-06 13:11:51,451 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 13:11:53,749 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.AspectJPointcutAdvisor]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting 'name pattern' at character position 44
+execution(public * cn.xiaoxian.service..*.*(...)))
+                                            ^^^
+
+2019-01-06 13:14:25,699 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 13:14:25 CST 2019]; root of context hierarchy
+2019-01-06 13:14:25,930 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 13:14:29,703 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2019-01-06 13:14:29,760 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-06 13:14:29,762 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2019-01-06 13:14:29,770 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2019-01-06 13:14:29,773 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-06 13:14:29,773 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2019-01-06 13:14:29,773 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2019-01-06 13:14:29,778 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@770d3326
+2019-01-06 13:14:30,119 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2019-01-06 13:14:30,121 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2019-01-06 13:14:30,121 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 13:14:30,162 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之前调用】
+2019-01-06 13:14:30,164 INFO [cn.xiaoxian.service.IMessageService] - 【业务层处理】执行删除操作，删除的id=xiaoxian
+2019-01-06 13:14:30,165 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之后调用】
+2019-01-06 13:17:17,003 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 13:17:16 CST 2019]; root of context hierarchy
+2019-01-06 13:17:17,312 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 13:17:20,846 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2019-01-06 13:17:20,892 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-06 13:17:20,893 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2019-01-06 13:17:20,896 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2019-01-06 13:17:20,898 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-06 13:17:20,900 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2019-01-06 13:17:20,901 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2019-01-06 13:17:20,911 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@770d3326
+2019-01-06 13:17:21,257 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2019-01-06 13:17:21,258 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2019-01-06 13:17:21,259 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 13:17:21,309 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之前调用】
+2019-01-06 13:17:21,310 INFO [cn.xiaoxian.service.IMessageService] - 【业务层处理】执行删除操作，删除的id=xiaoxian
+2019-01-06 13:17:21,310 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之后调用】
+2019-01-06 13:20:41,788 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 13:20:41 CST 2019]; root of context hierarchy
+2019-01-06 13:20:42,114 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 13:20:46,000 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2019-01-06 13:20:46,050 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-06 13:20:46,051 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2019-01-06 13:20:46,075 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2019-01-06 13:20:46,077 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-06 13:20:46,078 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2019-01-06 13:20:46,078 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2019-01-06 13:20:46,084 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@770d3326
+2019-01-06 13:20:46,337 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2019-01-06 13:20:46,338 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2019-01-06 13:20:46,340 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 13:20:46,370 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之前调用】
+2019-01-06 13:20:46,372 INFO [cn.xiaoxian.service.IMessageService] - 【业务层处理】执行删除操作，删除的id=xiaoxian
+2019-01-06 13:20:46,373 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之后调用】
+2019-01-06 17:05:03,146 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 17:05:03 CST 2019]; root of context hierarchy
+2019-01-06 17:05:03,532 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 17:05:06,930 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2019-01-06 17:05:06,968 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-06 17:05:06,969 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2019-01-06 17:05:06,972 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2019-01-06 17:05:06,973 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-06 17:05:06,974 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2019-01-06 17:05:06,974 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2019-01-06 17:05:06,979 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@26275bef
+2019-01-06 17:05:07,253 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2019-01-06 17:05:07,254 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2019-01-06 17:05:07,254 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 17:05:07,305 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之前调用】参数：xiaoxian
+2019-01-06 17:05:07,306 INFO [cn.xiaoxian.service.IMessageService] - 【业务层处理】执行删除操作，删除的id=xiaoxian
+2019-01-06 17:05:07,307 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之后调用】
+2019-01-06 17:05:39,486 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 17:05:39 CST 2019]; root of context hierarchy
+2019-01-06 17:05:39,916 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 17:05:43,496 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2019-01-06 17:05:43,612 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-06 17:05:43,614 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2019-01-06 17:05:43,624 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2019-01-06 17:05:43,628 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-06 17:05:43,629 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2019-01-06 17:05:43,629 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2019-01-06 17:05:43,640 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@26275bef
+2019-01-06 17:05:44,283 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2019-01-06 17:05:44,284 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2019-01-06 17:05:44,284 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 17:05:44,338 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之前调用】参数：zhou xiang xian 
+2019-01-06 17:05:44,339 INFO [cn.xiaoxian.service.IMessageService] - 【业务层处理】执行删除操作，删除的id=zhou xiang xian 
+2019-01-06 17:05:44,339 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之后调用】
+2019-01-06 17:10:35,652 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 17:10:35 CST 2019]; root of context hierarchy
+2019-01-06 17:10:35,919 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 17:10:39,931 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2019-01-06 17:10:39,977 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-06 17:10:39,977 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2019-01-06 17:10:39,980 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2019-01-06 17:10:39,982 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-06 17:10:39,983 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2019-01-06 17:10:39,986 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2019-01-06 17:10:40,017 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@346d61be
+2019-01-06 17:10:40,268 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2019-01-06 17:10:40,268 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2019-01-06 17:10:40,269 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 17:10:40,341 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之前调用】参数：zhou xiang xian 
+2019-01-06 17:10:40,342 INFO [cn.xiaoxian.service.IMessageService] - 【业务层处理】执行删除操作，删除的id=zhou xiang xian 
+2019-01-06 17:10:40,342 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之后调用】
+2019-01-06 17:10:40,343 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【返回通知】返回值=false
+2019-01-06 17:15:33,491 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 17:15:33 CST 2019]; root of context hierarchy
+2019-01-06 17:15:33,880 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 17:15:37,582 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2019-01-06 17:15:37,626 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-06 17:15:37,627 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2019-01-06 17:15:37,631 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2019-01-06 17:15:37,644 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-06 17:15:37,656 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2019-01-06 17:15:37,656 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2019-01-06 17:15:37,662 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@79da8dc5
+2019-01-06 17:15:37,970 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2019-01-06 17:15:37,971 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2019-01-06 17:15:37,972 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 17:15:38,099 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之前调用】参数：zhou xiang xian 
+2019-01-06 17:15:38,101 INFO [cn.xiaoxian.service.IMessageService] - 【业务层处理】执行删除操作，删除的id=zhou xiang xian 
+2019-01-06 17:15:38,102 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【业务方法执行之后调用】
+2019-01-06 17:15:38,102 ERROR [cn.xiaoxian.service.proxy.ServiceProxy] - 【抛出异常】:java.lang.RuntimeException: 老子就是要抛出哥异常来
+2019-01-06 17:24:52,057 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 17:24:52 CST 2019]; root of context hierarchy
+2019-01-06 17:24:52,564 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 17:26:03,359 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 17:26:03 CST 2019]; root of context hierarchy
+2019-01-06 17:26:03,588 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 17:26:05,818 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.context.event.internalEventListenerProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.AspectJPointcutAdvisor]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: id [Xlint:invalidAbsoluteTypeName]
+2019-01-06 17:27:06,423 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 17:27:06 CST 2019]; root of context hierarchy
+2019-01-06 17:27:06,700 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 17:27:09,481 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2019-01-06 17:27:09,528 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-06 17:27:09,529 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2019-01-06 17:27:09,532 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2019-01-06 17:27:09,537 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-06 17:27:09,538 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2019-01-06 17:27:09,538 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2019-01-06 17:27:09,557 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3541cb24
+2019-01-06 17:27:09,858 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2019-01-06 17:27:09,859 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2019-01-06 17:27:09,872 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 17:27:09,904 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【before】执行参数：[zhou xiang xian ]
+2019-01-06 17:27:09,904 INFO [cn.xiaoxian.service.IMessageService] - 【业务层处理】执行删除操作，删除的id=www.xiaoxian.com
+2019-01-06 17:27:47,077 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1edf1c96: startup date [Sun Jan 06 17:27:47 CST 2019]; root of context hierarchy
+2019-01-06 17:27:47,357 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2019-01-06 17:27:50,144 INFO [org.quartz.impl.StdSchedulerFactory] - Using default implementation for ThreadExecutor
+2019-01-06 17:27:50,188 INFO [org.quartz.core.SchedulerSignalerImpl] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-01-06 17:27:50,189 INFO [org.quartz.core.QuartzScheduler] - Quartz Scheduler v.2.2.3 created.
+2019-01-06 17:27:50,192 INFO [org.quartz.simpl.RAMJobStore] - RAMJobStore initialized.
+2019-01-06 17:27:50,194 INFO [org.quartz.core.QuartzScheduler] - Scheduler meta-data: Quartz Scheduler (v2.2.3) 'triggerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-01-06 17:27:50,195 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler 'triggerFactory' initialized from an externally provided properties instance.
+2019-01-06 17:27:50,195 INFO [org.quartz.impl.StdSchedulerFactory] - Quartz scheduler version: 2.2.3
+2019-01-06 17:27:50,203 INFO [org.quartz.core.QuartzScheduler] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3541cb24
+2019-01-06 17:27:50,556 INFO [org.springframework.context.support.DefaultLifecycleProcessor] - Starting beans in phase 2147483647
+2019-01-06 17:27:50,557 INFO [org.springframework.scheduling.quartz.SchedulerFactoryBean] - Starting Quartz Scheduler now
+2019-01-06 17:27:50,558 INFO [org.quartz.core.QuartzScheduler] - Scheduler triggerFactory_$_NON_CLUSTERED started.
+2019-01-06 17:27:50,592 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【before】执行参数：[zhou xiang xian ]
+2019-01-06 17:27:50,593 INFO [cn.xiaoxian.service.IMessageService] - 【业务层处理】执行删除操作，删除的id=www.xiaoxian.com
+2019-01-06 17:27:50,604 INFO [cn.xiaoxian.service.proxy.ServiceProxy] - 【after】返回结果:false
