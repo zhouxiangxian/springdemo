@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+	<context:annotation-config />
+	<context:component-scan base-package="cn.xiaoxian"/>
+	<bean id="messageServiceImpl" class="cn.xiaoxian.service.impl.MessageServiceImpl"/>
+	<!-- aop操作处理配置 -->
+	<bean id="serviceProxy" class="cn.xiaoxian.service.proxy.ServiceProxy"/>
+	<aop:config>
+	  <aop:pointcut expression="execution(* cn.xiaoxian.service..*.*(..))" id="xiaoxianPC"/>
+	  <aop:aspect ref="serviceProxy">
+	      <aop:around method="arroundInvoke" pointcut-ref="xiaoxianPC"/>
+	  </aop:aspect>
+	
+	</aop:config>
+	<!-- 
+	<aop:config>
+	   <aop:pointcut expression="execution(* cn.xiaoxian.service..*.*(..)) and args(xiaoxian)" id="defaultPC"/>
+	   <aop:aspect ref="serviceProxy">
+	   	<aop:before method="beforeInvoke" pointcut-ref="defaultPC" arg-names="xiaoxian"/>
+	   	<aop:after method="afterInvoke" pointcut="execution(* cn.xiaoxian.service..*.*(..))"/>
+	   	<aop:after-returning method="returnInvoke" pointcut="execution(* cn.xiaoxian.service..*.*(..))" returning="vue" arg-names="vue"/>
+	   	<aop:after-throwing method="throwInvoke" pointcut="execution(* cn.xiaoxian.service..*.*(..))" throwing="e" arg-names="e"/>
+	   </aop:aspect>
+	</aop:config>
+	 -->
+	
+	<!-- 使用spring task组件完成定时调度 -->
+	<bean id="xiaoxianTask" class="cn.xiaoxian.util.XiaoXianTask"/>
+	<task:scheduled-tasks>
+	 <!--  <task:scheduled ref="xiaoxianTask" method="runJob" fixed-rate="2000"/> -->
+	 <task:scheduled ref="xiaoxianTask" method="runJob" cron="* * * * * ?"/>
+	</task:scheduled-tasks>
+	
+	<!-- 配置定时调度  第一种方式，需要继承-->
+	<bean id="taskFactory1" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="cn.xiaoxian.util.MyTask1"></property>
+		<property name="jobDataMap">
+			<map>
+			  <entry key="timeout" value="0">
+			  </entry>
+			</map>
+		</property>
+	</bean>
+	<!-- 第二种方式 -->
+	<bean id="taskFactory2" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	  <property name="targetObject" >
+	    <bean class="cn.xiaoxian.util.MyTask2"/>
+	  </property>
+	  <property name="targetMethod" value="execSelf" />
+	</bean>
+	
+	<bean  id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+	    <property name="jobDetail" ref="taskFactory1"></property>
+	    <property name="startDelay" value="0"></property>
+	    <property name="repeatInterval" value="2000"></property>
+	</bean>
+	<!-- cron支持的间隔调度 -->
+	<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+	    <property name="jobDetail" ref="taskFactory2"></property>
+	    <property name="cronExpression" value="* * * * * ?"></property>
+	</bean>
+	
+	<bean id="triggerFactory" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	    <property name="triggers">
+	        <list>
+	          <ref bean="cronTrigger"/>
+	        </list>
+	    </property>
+	</bean>
+	<bean id="msg" class="cn.mldn.service.impl.MessageServiceImpl" />
+	<bean id="emp" class="cn.xiaoxian.vo.Emp">
+		<property name="empno" value="7369"></property>
+		<property name="ename" value="Smith"></property>
+		<property name="sal" value="680.00"></property>
+	</bean>
+	<bean id="dept" class="cn.xiaoxian.vo.Dept">
+		<property name="deptno" value="10" />
+		<property name="dname" value="开发一部"></property>
+		<property name="loc" value="深圳"></property>
+		<property name="emps">
+		     <list>
+		        <ref bean="emp"/>
+		        <bean class="cn.xiaoxian.vo.Emp">
+		            <property name="empno" value="7344"/>
+		            <property name="ename" value="Allen"/>
+		            <property name="sal" value="7866.0"></property>
+		        </bean>
+		     </list>
+		</property>
+	</bean>
+	<bean id="resourceUtil" class="cn.xiaoxian.util.ResourceUtil">
+	    <property name="src" value="http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd"></property>
+	</bean>
+	<bean id="resourceUtils" class="cn.xiaoxian.util.ResourceUtils">
+	    <property name="src">
+	       <array>
+	          <value>classpath:abc/**/xiaoxian*</value>
+	          <value>http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd</value>
+	       </array>
+	    </property>
+	</bean>
+</beans>
