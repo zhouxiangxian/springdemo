@@ -1,7 +1,7 @@
 package cn.xiaoxian.vo;
 
 import java.util.List;
-import java.util.Properties;
+
 
 public class Dept {
 	private Integer deptno;

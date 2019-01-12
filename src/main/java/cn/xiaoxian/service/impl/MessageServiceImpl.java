@@ -1,9 +1,10 @@
 package cn.xiaoxian.service.impl;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
 
 import cn.xiaoxian.service.IMessageService;
-
+@Service
 public class MessageServiceImpl implements IMessageService {
 
 	@Override
