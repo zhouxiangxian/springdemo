@@ -76,12 +76,14 @@ public class EmpAction extends AbstractAction{
 	@RequestMapping("add")
 	public ModelAndView add(Emp emp,MultipartFile photo,HttpServletRequest request) {
 		log.info("emp="+emp);
-		log.info("文件是否上传:"+photo.isEmpty());
-		log.info("******文件大小:"+photo.getSize());
-		log.info("***原始文件名称:"+photo.getOriginalFilename());
-		log.info("***文件类型:"+photo.getContentType());
-		String fileName = super.createFileName(photo);
-		log.info("***上传结果:"+super.saveFile(photo, fileName, request));
+		if(!photo.isEmpty()) {
+			log.info("文件是否上传:"+photo.isEmpty());
+			log.info("******文件大小:"+photo.getSize());
+			log.info("***原始文件名称:"+photo.getOriginalFilename());
+			log.info("***文件类型:"+photo.getContentType());
+			String fileName = super.createFileName(photo);
+			log.info("***上传结果:"+super.saveFile(photo, fileName, request));
+		}
 		return null;
 	}
 	@RequestMapping("info")

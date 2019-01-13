@@ -26,7 +26,7 @@ public abstract class AbstractAction {
 	}
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
-		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
 		binder.registerCustomEditor(java.util.Date.class, new CustomDateEditor(sdf, true));
 	}
 	
