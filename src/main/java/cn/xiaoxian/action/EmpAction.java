@@ -15,6 +15,7 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import cn.xiaoxian.util.action.AbstractAction;
@@ -73,9 +74,29 @@ public class EmpAction extends AbstractAction{
 	}
 	
 	@RequestMapping("add")
-	public ModelAndView add(Emp emp) {
+	public ModelAndView add(Emp emp,MultipartFile photo,HttpServletRequest request) {
 		log.info("emp="+emp);
+		log.info("文件是否上传:"+photo.isEmpty());
+		log.info("******文件大小:"+photo.getSize());
+		log.info("***原始文件名称:"+photo.getOriginalFilename());
+		log.info("***文件类型:"+photo.getContentType());
+		String fileName = super.createFileName(photo);
+		log.info("***上传结果:"+super.saveFile(photo, fileName, request));
 		return null;
+	}
+	@RequestMapping("info")
+	public ModelAndView info() {
+		log.info(super.getValue("vo.edit.msg", "雇员"));
+		log.info(super.getValue("emp.add.pages"));
+		log.info(super.getValue("emp.add.rules"));
+		return null;
+	}
+
+
+	@Override
+	public String getFileUploadDir() {
+		// TODO Auto-generated method stub
+		return "/upload/emp";
 	}
 	
 
