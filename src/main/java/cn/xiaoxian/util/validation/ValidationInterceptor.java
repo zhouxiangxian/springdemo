@@ -22,7 +22,6 @@ public class ValidationInterceptor implements HandlerInterceptor {
 		boolean flag=true;
 		HandlerMethod handlerMethod=(HandlerMethod)handler;
 		Map<String, String> errors = ValidationUtils.validate(request, handlerMethod);
-		log.info("errors:"+errors);
 		if(errors.size()>0) {
 			flag=false;
 			request.setAttribute("errors", errors);
