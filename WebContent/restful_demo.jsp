@@ -18,6 +18,8 @@
 		<button id="addMember">增加用户</button>
 		<button id="editMember">编辑用户</button>
 		<button id="removeMember">删除用户</button>
+		<button id="getMember">查询用户</button>
+		<button id="listMember">列表用户</button>
 	</div>
 	<div id="showDiv"></div>
 </body>

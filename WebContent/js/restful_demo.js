@@ -45,4 +45,35 @@ $(function(){
 			}
 		});
 	});
+	$(getMember).on("click",function(){
+		$.ajax({
+			url:"member/10002",
+			type:"get",
+			dataType:"json",
+			success:function(data){
+				$(showDiv).append("<p>查询处理结果:"+data.mid+","+data.name+","+data.salary+","+data.hiredate+"</P");
+			},
+			error:function(data){
+				$(showDiv).append("<h2>sorry,出错了!</h2>");
+			}
+		});
+	});
+	$(listMember).on("click",function(){
+		$.ajax({
+			url:"member/splitByName?cp=3&ls=20&kw=小卡",
+			type:"patch",
+			dataType:"json",
+			success:function(data){
+				$(showDiv).append("<p>condition="+data.condition+"</P");
+				$(showDiv).append("<p>memberCount="+data.memberCount+"</P");
+				for(var a=0;a<data.allMembers.length;a++){
+					$(showDiv).append("<p>查询处理结果:"+data.allMembers[a].mid+","+data.allMembers[a].name+","+data.allMembers[a].salary+","+data.allMembers[a].hiredate+"</P");
+				}
+			},
+			error:function(data){
+				$(showDiv).append("<h2>sorry,出错了!</h2>");
+			}
+		});
+	});
+	
 })
