@@ -9,8 +9,13 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import cn.xiaoxian.vo.Member;
 @Path("/member")
+@Component
+@Scope("prototype")//描述本类不属于单例设计模式
 public class MemberResources {
 	@Path("/get")
 	@GET
