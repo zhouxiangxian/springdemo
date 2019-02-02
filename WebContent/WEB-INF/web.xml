@@ -40,4 +40,30 @@
 		<welcome-file>login.jsp</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
+	<filter>
+		<filter-name>httpPutFormContentFilter</filter-name>
+		<filter-class>org.springframework.web.filter.HttpPutFormContentFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>httpPutFormContentFilter</filter-name>
+		<servlet-name>rest</servlet-name>
+	</filter-mapping>
+	<!-- 需要定义一个专门提供有Restful风格的WebService的Servlet处理类 -->
+	<servlet>
+		<servlet-name>restService</servlet-name>
+		<servlet-class>
+			com.sun.jersey.spi.container.servlet.ServletContainer
+		</servlet-class>
+		<!-- 定义的是自动配置的扫描包，也就是说你的程序应该放在“cn.xiaoxian.resources”包中 -->
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>cn.xiaoxian.resources</param-value> 
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>restService</servlet-name>
+		<!-- 所有的WebService的服务路径必须在“/rest/”目录下 -->
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
